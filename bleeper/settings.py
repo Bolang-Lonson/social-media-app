@@ -17,6 +17,12 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+TAILWINDCSS_CLI_FILE = BASE_DIR / 'tailwindcss-windows-x64.exe'
+TAILWINDCSS_CONFIG_FILE = BASE_DIR / 'tailwind.config.js'
+
+# For file mode
+TAILWINDCSS_OUTPUT_FILE = 'style.css'
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -38,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bootstrap5',
+    'bootstrap5', 'tailwindcss',
 
     'feed',
 ]
