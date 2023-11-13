@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}changed title of page{% endblock title %}
+
+{% block body %}
+    {% for post in posts %}
+        {{ post.text }} written on {{ post.date }}
+        <hr>
+    {% endfor %}
+{% endblock body %}
