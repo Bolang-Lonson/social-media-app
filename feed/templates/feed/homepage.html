@@ -4,7 +4,7 @@
 
 {% block body %}
     {% for post in posts %}
-        {{ post.text }} written on {{ post.date }}
+        <p class='text-sm'>{{ post.text }} written on {{ post.date }}</p>
         <hr>
     {% endfor %}
 {% endblock body %}
