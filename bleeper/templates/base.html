@@ -13,6 +13,8 @@
         <a href="{% url "account_login" %}">Login</a>
     {% endif %}
     <hr>
-    {% block body %}{% endblock body %}
+    {% block body %}
+        {% block content %}{% endblock content %}
+    {% endblock body %}
 </body>
 </html>
